@@ -185,11 +185,13 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
         esp_gatt_rsp_t rsp;
         memset(&rsp, 0, sizeof(esp_gatt_rsp_t));
         rsp.attr_value.handle = param->read.handle;
-        rsp.attr_value.len = 4;
-        rsp.attr_value.value[0] = 0xde;
-        rsp.attr_value.value[1] = 0xed;
-        rsp.attr_value.value[2] = 0xbe;
-        rsp.attr_value.value[3] = 0xef;
+        rsp.attr_value.len = 6;
+        rsp.attr_value.value[0] = 'b';
+        rsp.attr_value.value[1] = 'i';
+        rsp.attr_value.value[2] = 't';
+        rsp.attr_value.value[3] = 'c';
+        rsp.attr_value.value[4] = 'h';
+        rsp.attr_value.value[5] = 0;
         esp_ble_gatts_send_response(gatts_if, param->read.conn_id, param->read.trans_id,
                                     ESP_GATT_OK, &rsp);
         break;
