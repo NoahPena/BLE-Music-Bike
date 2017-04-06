@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1311E95E24A00694F57 /* AppDelegate.swift */; };
+		B650F1341E95E24A00694F57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1331E95E24A00694F57 /* ViewController.swift */; };
+		B650F1371E95E24B00694F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B650F1351E95E24B00694F57 /* Main.storyboard */; };
+		B650F1391E95E24B00694F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B650F1381E95E24B00694F57 /* Assets.xcassets */; };
+		B650F13C1E95E24B00694F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B650F13A1E95E24B00694F57 /* LaunchScreen.storyboard */; };
+		B650F1471E95E24B00694F57 /* BLE_Music_BikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1461E95E24B00694F57 /* BLE_Music_BikeTests.swift */; };
+		B650F1521E95E24B00694F57 /* BLE_Music_BikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */; };
+		B650F1661E95FF7A00694F57 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B650F1651E95FF7A00694F57 /* Cartfile */; };
+		B650F1701E9618E600694F57 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */; };
+		B650F1721E9618F000694F57 /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B650F1431E95E24B00694F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B650F1261E95E24A00694F57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B650F12D1E95E24A00694F57;
+			remoteInfo = "BLE-Music-Bike";
+		};
+		B650F14E1E95E24B00694F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B650F1261E95E24A00694F57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B650F12D1E95E24A00694F57;
+			remoteInfo = "BLE-Music-Bike";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B650F16E1E9617C700694F57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B650F1721E9618F000694F57 /* RxBluetoothKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-Music-Bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B650F1311E95E24A00694F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B650F1331E95E24A00694F57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B650F1361E95E24B00694F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B650F1381E95E24B00694F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B650F13B1E95E24B00694F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B650F13D1E95E24B00694F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B650F1421E95E24B00694F57 /* BLE-Music-BikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE-Music-BikeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B650F1461E95E24B00694F57 /* BLE_Music_BikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_Music_BikeTests.swift; sourceTree = "<group>"; };
+		B650F1481E95E24B00694F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B650F14D1E95E24B00694F57 /* BLE-Music-BikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE-Music-BikeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_Music_BikeUITests.swift; sourceTree = "<group>"; };
+		B650F1531E95E24B00694F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B650F1651E95FF7A00694F57 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = "BLE-Music-Bike/Carthage/Build/iOS/RxBluetoothKit.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B650F12B1E95E24A00694F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B650F1701E9618E600694F57 /* RxBluetoothKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B650F13F1E95E24B00694F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B650F14A1E95E24B00694F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B650F1251E95E24A00694F57 = {
+			isa = PBXGroup;
+			children = (
+				B650F1731E961A6500694F57 /* Frameworks */,
+				B650F1301E95E24A00694F57 /* BLE-Music-Bike */,
+				B650F1451E95E24B00694F57 /* BLE-Music-BikeTests */,
+				B650F1501E95E24B00694F57 /* BLE-Music-BikeUITests */,
+				B650F12F1E95E24A00694F57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B650F12F1E95E24A00694F57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */,
+				B650F1421E95E24B00694F57 /* BLE-Music-BikeTests.xctest */,
+				B650F14D1E95E24B00694F57 /* BLE-Music-BikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B650F1301E95E24A00694F57 /* BLE-Music-Bike */ = {
+			isa = PBXGroup;
+			children = (
+				B650F15F1E95F1A600694F57 /* ViewControllers */,
+				B650F1311E95E24A00694F57 /* AppDelegate.swift */,
+				B650F1351E95E24B00694F57 /* Main.storyboard */,
+				B650F1381E95E24B00694F57 /* Assets.xcassets */,
+				B650F13A1E95E24B00694F57 /* LaunchScreen.storyboard */,
+				B650F13D1E95E24B00694F57 /* Info.plist */,
+				B650F1651E95FF7A00694F57 /* Cartfile */,
+			);
+			path = "BLE-Music-Bike";
+			sourceTree = "<group>";
+		};
+		B650F1451E95E24B00694F57 /* BLE-Music-BikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B650F1461E95E24B00694F57 /* BLE_Music_BikeTests.swift */,
+				B650F1481E95E24B00694F57 /* Info.plist */,
+			);
+			path = "BLE-Music-BikeTests";
+			sourceTree = "<group>";
+		};
+		B650F1501E95E24B00694F57 /* BLE-Music-BikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */,
+				B650F1531E95E24B00694F57 /* Info.plist */,
+			);
+			path = "BLE-Music-BikeUITests";
+			sourceTree = "<group>";
+		};
+		B650F15F1E95F1A600694F57 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B650F1331E95E24A00694F57 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B650F1731E961A6500694F57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B650F12D1E95E24A00694F57 /* BLE-Music-Bike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B650F1561E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-Bike" */;
+			buildPhases = (
+				B650F12A1E95E24A00694F57 /* Sources */,
+				B650F12B1E95E24A00694F57 /* Frameworks */,
+				B650F12C1E95E24A00694F57 /* Resources */,
+				B650F16E1E9617C700694F57 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BLE-Music-Bike";
+			productName = "BLE-Music-Bike";
+			productReference = B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B650F1411E95E24B00694F57 /* BLE-Music-BikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B650F1591E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-BikeTests" */;
+			buildPhases = (
+				B650F13E1E95E24B00694F57 /* Sources */,
+				B650F13F1E95E24B00694F57 /* Frameworks */,
+				B650F1401E95E24B00694F57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B650F1441E95E24B00694F57 /* PBXTargetDependency */,
+			);
+			name = "BLE-Music-BikeTests";
+			productName = "BLE-Music-BikeTests";
+			productReference = B650F1421E95E24B00694F57 /* BLE-Music-BikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B650F14C1E95E24B00694F57 /* BLE-Music-BikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B650F15C1E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-BikeUITests" */;
+			buildPhases = (
+				B650F1491E95E24B00694F57 /* Sources */,
+				B650F14A1E95E24B00694F57 /* Frameworks */,
+				B650F14B1E95E24B00694F57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B650F14F1E95E24B00694F57 /* PBXTargetDependency */,
+			);
+			name = "BLE-Music-BikeUITests";
+			productName = "BLE-Music-BikeUITests";
+			productReference = B650F14D1E95E24B00694F57 /* BLE-Music-BikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B650F1261E95E24A00694F57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Noah Peña";
+				TargetAttributes = {
+					B650F12D1E95E24A00694F57 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DVUKB7EF77;
+						ProvisioningStyle = Automatic;
+					};
+					B650F1411E95E24B00694F57 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DVUKB7EF77;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B650F12D1E95E24A00694F57;
+					};
+					B650F14C1E95E24B00694F57 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DVUKB7EF77;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B650F12D1E95E24A00694F57;
+					};
+				};
+			};
+			buildConfigurationList = B650F1291E95E24A00694F57 /* Build configuration list for PBXProject "BLE-Music-Bike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B650F1251E95E24A00694F57;
+			productRefGroup = B650F12F1E95E24A00694F57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B650F12D1E95E24A00694F57 /* BLE-Music-Bike */,
+				B650F1411E95E24B00694F57 /* BLE-Music-BikeTests */,
+				B650F14C1E95E24B00694F57 /* BLE-Music-BikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B650F12C1E95E24A00694F57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B650F13C1E95E24B00694F57 /* LaunchScreen.storyboard in Resources */,
+				B650F1391E95E24B00694F57 /* Assets.xcassets in Resources */,
+				B650F1661E95FF7A00694F57 /* Cartfile in Resources */,
+				B650F1371E95E24B00694F57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B650F1401E95E24B00694F57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B650F14B1E95E24B00694F57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B650F12A1E95E24A00694F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B650F1341E95E24A00694F57 /* ViewController.swift in Sources */,
+				B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B650F13E1E95E24B00694F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B650F1471E95E24B00694F57 /* BLE_Music_BikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B650F1491E95E24B00694F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B650F1521E95E24B00694F57 /* BLE_Music_BikeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B650F1441E95E24B00694F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B650F12D1E95E24A00694F57 /* BLE-Music-Bike */;
+			targetProxy = B650F1431E95E24B00694F57 /* PBXContainerItemProxy */;
+		};
+		B650F14F1E95E24B00694F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B650F12D1E95E24A00694F57 /* BLE-Music-Bike */;
+			targetProxy = B650F14E1E95E24B00694F57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B650F1351E95E24B00694F57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B650F1361E95E24B00694F57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B650F13A1E95E24B00694F57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B650F13B1E95E24B00694F57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B650F1541E95E24B00694F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B650F1551E95E24B00694F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B650F1571E95E24B00694F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DVUKB7EF77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BLE-Music-Bike/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-Bike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B650F1581E95E24B00694F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DVUKB7EF77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BLE-Music-Bike/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-Bike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B650F15A1E95E24B00694F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DVUKB7EF77;
+				INFOPLIST_FILE = "BLE-Music-BikeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-BikeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE-Music-Bike.app/BLE-Music-Bike";
+			};
+			name = Debug;
+		};
+		B650F15B1E95E24B00694F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DVUKB7EF77;
+				INFOPLIST_FILE = "BLE-Music-BikeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-BikeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE-Music-Bike.app/BLE-Music-Bike";
+			};
+			name = Release;
+		};
+		B650F15D1E95E24B00694F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DVUKB7EF77;
+				INFOPLIST_FILE = "BLE-Music-BikeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-BikeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "BLE-Music-Bike";
+			};
+			name = Debug;
+		};
+		B650F15E1E95E24B00694F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DVUKB7EF77;
+				INFOPLIST_FILE = "BLE-Music-BikeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-BikeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "BLE-Music-Bike";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B650F1291E95E24A00694F57 /* Build configuration list for PBXProject "BLE-Music-Bike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B650F1541E95E24B00694F57 /* Debug */,
+				B650F1551E95E24B00694F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B650F1561E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-Bike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B650F1571E95E24B00694F57 /* Debug */,
+				B650F1581E95E24B00694F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B650F1591E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-BikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B650F15A1E95E24B00694F57 /* Debug */,
+				B650F15B1E95E24B00694F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B650F15C1E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-BikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B650F15D1E95E24B00694F57 /* Debug */,
+				B650F15E1E95E24B00694F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B650F1261E95E24A00694F57 /* Project object */;
+}

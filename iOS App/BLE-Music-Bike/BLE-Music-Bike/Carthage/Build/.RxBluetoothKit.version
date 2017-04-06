@@ -1,0 +1,22 @@
+{
+  "commitish" : "3.0.7",
+  "iOS" : [
+    {
+      "hash" : "19e7d8df2b77461e17492f761c113a104c03b213a66a5fe82e555659eb51e1b5",
+      "name" : "RxBluetoothKit"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+    {
+      "hash" : "a9376b61690dc9caec35817ae36ca8ba42c8db0884a67a48780454c1ac497270",
+      "name" : "RxBluetoothKit"
+    }
+  ]
+}

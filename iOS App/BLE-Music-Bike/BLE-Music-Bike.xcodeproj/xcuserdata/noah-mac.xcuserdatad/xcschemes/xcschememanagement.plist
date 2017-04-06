@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>BLE-Music-Bike.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B650F12D1E95E24A00694F57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B650F1411E95E24B00694F57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B650F14C1E95E24B00694F57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
