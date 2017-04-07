@@ -1,0 +1,19 @@
+{
+  "commitish" : "0.5.3",
+  "iOS" : [
+    {
+      "hash" : "2cc56b561bf3d121ae7f962b709995aa660c5467ee22a93b80e2bd443a42dc3e",
+      "name" : "BlueCapKit"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

@@ -15,8 +15,8 @@
 		B650F1471E95E24B00694F57 /* BLE_Music_BikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1461E95E24B00694F57 /* BLE_Music_BikeTests.swift */; };
 		B650F1521E95E24B00694F57 /* BLE_Music_BikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */; };
 		B650F1661E95FF7A00694F57 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B650F1651E95FF7A00694F57 /* Cartfile */; };
-		B650F1701E9618E600694F57 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */; };
-		B650F1721E9618F000694F57 /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B66CC6A31E976AC800CFDE98 /* BlueCapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */; };
+		B66CC6A51E976AF300CFDE98 /* BlueCapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B650F1721E9618F000694F57 /* RxBluetoothKit.framework in Embed Frameworks */,
+				B66CC6A51E976AF300CFDE98 /* BlueCapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 		B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_Music_BikeUITests.swift; sourceTree = "<group>"; };
 		B650F1531E95E24B00694F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B650F1651E95FF7A00694F57 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = "BLE-Music-Bike/Carthage/Build/iOS/RxBluetoothKit.framework"; sourceTree = "<group>"; };
+		B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlueCapKit.framework; path = "BLE-Music-Bike/Carthage/Build/iOS/BlueCapKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B650F1701E9618E600694F57 /* RxBluetoothKit.framework in Frameworks */,
+				B66CC6A31E976AC800CFDE98 /* BlueCapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +158,7 @@
 		B650F1731E961A6500694F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B650F16F1E9618E600694F57 /* RxBluetoothKit.framework */,
+				B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -462,7 +462,7 @@
 				);
 				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-Bike";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -481,7 +481,7 @@
 				);
 				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-Bike";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -566,6 +566,7 @@
 				B650F1581E95E24B00694F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B650F1591E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-BikeTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +575,7 @@
 				B650F15B1E95E24B00694F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B650F15C1E95E24B00694F57 /* Build configuration list for PBXNativeTarget "BLE-Music-BikeUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +584,7 @@
 				B650F15E1E95E24B00694F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
