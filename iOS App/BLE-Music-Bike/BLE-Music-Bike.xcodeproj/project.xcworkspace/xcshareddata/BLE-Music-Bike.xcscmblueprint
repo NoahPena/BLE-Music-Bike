@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "23EDCEE58E72CDB0A0A3461B6FEF6B6D8648541C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2F24C7ABC659AFF86BEF70BD7DCAF0EF1B9AD29C" : 9223372036854775807,
+    "23EDCEE58E72CDB0A0A3461B6FEF6B6D8648541C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "982A96F9-AAFF-4B64-BFA0-613BA2F17599",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2F24C7ABC659AFF86BEF70BD7DCAF0EF1B9AD29C" : "BLE-Music-Bike\/iOS%20App\/BLE-Music-Bike\/BLE-Music-Bike\/ios-sdk\/",
+    "23EDCEE58E72CDB0A0A3461B6FEF6B6D8648541C" : "BLE-Music-Bike\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BLE-Music-Bike",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS App\/BLE-Music-Bike\/BLE-Music-Bike.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NoahPena\/BLE-Music-Bike",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23EDCEE58E72CDB0A0A3461B6FEF6B6D8648541C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/spotify\/ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2F24C7ABC659AFF86BEF70BD7DCAF0EF1B9AD29C"
+    }
+  ]
+}

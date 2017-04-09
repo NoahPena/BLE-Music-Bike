@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B66C6601E99EBEA00786A78 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C65E1E99EBDB00786A78 /* Alamofire.framework */; };
+		8B66C6611E99EBEA00786A78 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C65E1E99EBDB00786A78 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B66C6791E99F75400786A78 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */; };
+		8B66C67A1E99F75400786A78 /* SpotifyAudioPlayback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B66C67B1E99F75400786A78 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */; };
+		8B66C67C1E99F75400786A78 /* SpotifyAuthentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B66C67F1E99F7DF00786A78 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */; };
+		8B66C6801E99F7DF00786A78 /* SpotifyMetadata.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B66C6821E9A06FD00786A78 /* SongDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66C6811E9A06FD00786A78 /* SongDatabase.swift */; };
 		B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1311E95E24A00694F57 /* AppDelegate.swift */; };
 		B650F1341E95E24A00694F57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1331E95E24A00694F57 /* ViewController.swift */; };
 		B650F1371E95E24B00694F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B650F1351E95E24B00694F57 /* Main.storyboard */; };
@@ -14,7 +23,6 @@
 		B650F13C1E95E24B00694F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B650F13A1E95E24B00694F57 /* LaunchScreen.storyboard */; };
 		B650F1471E95E24B00694F57 /* BLE_Music_BikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1461E95E24B00694F57 /* BLE_Music_BikeTests.swift */; };
 		B650F1521E95E24B00694F57 /* BLE_Music_BikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */; };
-		B650F1661E95FF7A00694F57 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B650F1651E95FF7A00694F57 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +42,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8B66C6571E99D4C900786A78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B66C6801E99F7DF00786A78 /* SpotifyMetadata.framework in Embed Frameworks */,
+				8B66C67C1E99F75400786A78 /* SpotifyAuthentication.framework in Embed Frameworks */,
+				8B66C6611E99EBEA00786A78 /* Alamofire.framework in Embed Frameworks */,
+				8B66C67A1E99F75400786A78 /* SpotifyAudioPlayback.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8B66C65A1E99D74400786A78 /* BLE-Music-Bike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLE-Music-Bike-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B66C65E1E99EBDB00786A78 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "BLE-Music-Bike/Carthage/Build/iOS/Alamofire.framework"; sourceTree = "<group>"; };
+		8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
+		8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
+		8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyMetadata.framework"; sourceTree = "<group>"; };
+		8B66C6811E9A06FD00786A78 /* SongDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDatabase.swift; sourceTree = "<group>"; };
 		B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-Music-Bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B650F1311E95E24A00694F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B650F1331E95E24A00694F57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +79,6 @@
 		B650F14D1E95E24B00694F57 /* BLE-Music-BikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE-Music-BikeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_Music_BikeUITests.swift; sourceTree = "<group>"; };
 		B650F1531E95E24B00694F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B650F1651E95FF7A00694F57 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B66C67F1E99F7DF00786A78 /* SpotifyMetadata.framework in Frameworks */,
+				8B66C67B1E99F75400786A78 /* SpotifyAuthentication.framework in Frameworks */,
+				8B66C6601E99EBEA00786A78 /* Alamofire.framework in Frameworks */,
+				8B66C6791E99F75400786A78 /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +140,8 @@
 				B650F1381E95E24B00694F57 /* Assets.xcassets */,
 				B650F13A1E95E24B00694F57 /* LaunchScreen.storyboard */,
 				B650F13D1E95E24B00694F57 /* Info.plist */,
-				B650F1651E95FF7A00694F57 /* Cartfile */,
+				8B66C65A1E99D74400786A78 /* BLE-Music-Bike-Bridging-Header.h */,
+				8B66C6811E9A06FD00786A78 /* SongDatabase.swift */,
 			);
 			path = "BLE-Music-Bike";
 			sourceTree = "<group>";
@@ -140,6 +175,10 @@
 		B650F1731E961A6500694F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */,
+				8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */,
+				8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */,
+				8B66C65E1E99EBDB00786A78 /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +193,7 @@
 				B650F12A1E95E24A00694F57 /* Sources */,
 				B650F12B1E95E24A00694F57 /* Frameworks */,
 				B650F12C1E95E24A00694F57 /* Resources */,
+				8B66C6571E99D4C900786A78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +253,7 @@
 					B650F12D1E95E24A00694F57 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = DVUKB7EF77;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -261,7 +302,6 @@
 			files = (
 				B650F13C1E95E24B00694F57 /* LaunchScreen.storyboard in Resources */,
 				B650F1391E95E24B00694F57 /* Assets.xcassets in Resources */,
-				B650F1661E95FF7A00694F57 /* Cartfile in Resources */,
 				B650F1371E95E24B00694F57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B66C6821E9A06FD00786A78 /* SongDatabase.swift in Sources */,
 				B650F1341E95E24A00694F57 /* ViewController.swift in Sources */,
 				B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */,
 			);
@@ -368,6 +409,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -387,6 +429,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,6 +462,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -430,6 +474,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -440,16 +485,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DVUKB7EF77;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BLE-Music-Bike/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/BLE-Music-Bike/ios-sdk",
 				);
 				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-Bike";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BLE-Music-Bike/BLE-Music-Bike-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -459,16 +509,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DVUKB7EF77;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BLE-Music-Bike/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/BLE-Music-Bike/ios-sdk",
 				);
 				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "noah.pena.BLE-Music-Bike";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BLE-Music-Bike/BLE-Music-Bike-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

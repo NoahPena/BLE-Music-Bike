@@ -51,10 +51,23 @@
                                     <action selector="BLEEnableSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Pe-nU-aW9"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-LN-7bH">
+                                <rect key="frame" x="82" y="594" width="251" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35837915539741516" green="0.86566483974456787" blue="0.40577974915504456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="LOGIN WITH SPOTIFY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginToSpotify:" destination="BYZ-38-t0r" eventType="touchDown" id="bnV-YR-erh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="loginSpotifyButton" destination="xG5-LN-7bH" id="NQJ-OH-yzI"/>
                         <outlet property="receiveText" destination="Rpz-ow-GBw" id="kzW-65-gG3"/>
                         <outlet property="scanSwitch" destination="0hg-a3-kYX" id="dNh-uv-rIe"/>
                         <outlet property="sendButton" destination="4hw-EM-nN7" id="CBV-Zf-xkq"/>
@@ -63,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="138.75"/>
+            <point key="canvasLocation" x="134.78260869565219" y="138.58695652173915"/>
         </scene>
     </scenes>
 </document>
