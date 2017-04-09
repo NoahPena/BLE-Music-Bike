@@ -38,16 +38,6 @@
                ReferencedContainer = "container:BLE-Music-Bike.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B650F14C1E95E24B00694F57"
-               BuildableName = "BLE-Music-BikeUITests.xctest"
-               BlueprintName = "BLE-Music-BikeUITests"
-               ReferencedContainer = "container:BLE-Music-Bike.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

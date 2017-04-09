@@ -15,8 +15,6 @@
 		B650F1471E95E24B00694F57 /* BLE_Music_BikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1461E95E24B00694F57 /* BLE_Music_BikeTests.swift */; };
 		B650F1521E95E24B00694F57 /* BLE_Music_BikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */; };
 		B650F1661E95FF7A00694F57 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B650F1651E95FF7A00694F57 /* Cartfile */; };
-		B66CC6A31E976AC800CFDE98 /* BlueCapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */; };
-		B66CC6A51E976AF300CFDE98 /* BlueCapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +34,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B650F16E1E9617C700694F57 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B66CC6A51E976AF300CFDE98 /* BlueCapKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-Music-Bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B650F1311E95E24A00694F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +49,6 @@
 		B650F1511E95E24B00694F57 /* BLE_Music_BikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_Music_BikeUITests.swift; sourceTree = "<group>"; };
 		B650F1531E95E24B00694F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B650F1651E95FF7A00694F57 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlueCapKit.framework; path = "BLE-Music-Bike/Carthage/Build/iOS/BlueCapKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66CC6A31E976AC800CFDE98 /* BlueCapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +140,6 @@
 		B650F1731E961A6500694F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B66CC6A21E976AC800CFDE98 /* BlueCapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,7 +154,6 @@
 				B650F12A1E95E24A00694F57 /* Sources */,
 				B650F12B1E95E24A00694F57 /* Frameworks */,
 				B650F12C1E95E24A00694F57 /* Resources */,
-				B650F16E1E9617C700694F57 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
