@@ -16,6 +16,8 @@
 		8B66C67F1E99F7DF00786A78 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */; };
 		8B66C6801E99F7DF00786A78 /* SpotifyMetadata.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B66C6821E9A06FD00786A78 /* SongDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66C6811E9A06FD00786A78 /* SongDatabase.swift */; };
+		8BF1D8221E9EF482002A62F3 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1D8211E9EF482002A62F3 /* BLE.swift */; };
+		8BF1D8241E9F1088002A62F3 /* SpotifyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1D8231E9F1088002A62F3 /* SpotifyPlayer.swift */; };
 		B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1311E95E24A00694F57 /* AppDelegate.swift */; };
 		B650F1341E95E24A00694F57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1331E95E24A00694F57 /* ViewController.swift */; };
 		B650F1371E95E24B00694F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B650F1351E95E24B00694F57 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
 		8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyMetadata.framework"; sourceTree = "<group>"; };
 		8B66C6811E9A06FD00786A78 /* SongDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDatabase.swift; sourceTree = "<group>"; };
+		8BF1D8211E9EF482002A62F3 /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		8BF1D8231E9F1088002A62F3 /* SpotifyPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPlayer.swift; sourceTree = "<group>"; };
 		B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-Music-Bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B650F1311E95E24A00694F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B650F1331E95E24A00694F57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BF1D8201E9EF436002A62F3 /* Peripherals */ = {
+			isa = PBXGroup;
+			children = (
+				8B66C6811E9A06FD00786A78 /* SongDatabase.swift */,
+				8BF1D8211E9EF482002A62F3 /* BLE.swift */,
+				8BF1D8231E9F1088002A62F3 /* SpotifyPlayer.swift */,
+			);
+			name = Peripherals;
+			sourceTree = "<group>";
+		};
 		B650F1251E95E24A00694F57 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +148,7 @@
 		B650F1301E95E24A00694F57 /* BLE-Music-Bike */ = {
 			isa = PBXGroup;
 			children = (
+				8BF1D8201E9EF436002A62F3 /* Peripherals */,
 				B650F15F1E95F1A600694F57 /* ViewControllers */,
 				B650F1311E95E24A00694F57 /* AppDelegate.swift */,
 				B650F1351E95E24B00694F57 /* Main.storyboard */,
@@ -141,7 +156,6 @@
 				B650F13A1E95E24B00694F57 /* LaunchScreen.storyboard */,
 				B650F13D1E95E24B00694F57 /* Info.plist */,
 				8B66C65A1E99D74400786A78 /* BLE-Music-Bike-Bridging-Header.h */,
-				8B66C6811E9A06FD00786A78 /* SongDatabase.swift */,
 			);
 			path = "BLE-Music-Bike";
 			sourceTree = "<group>";
@@ -259,6 +273,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
 						};
 					};
 					B650F1411E95E24B00694F57 = {
@@ -329,7 +346,9 @@
 			files = (
 				8B66C6821E9A06FD00786A78 /* SongDatabase.swift in Sources */,
 				B650F1341E95E24A00694F57 /* ViewController.swift in Sources */,
+				8BF1D8241E9F1088002A62F3 /* SpotifyPlayer.swift in Sources */,
 				B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */,
+				8BF1D8221E9EF482002A62F3 /* BLE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
