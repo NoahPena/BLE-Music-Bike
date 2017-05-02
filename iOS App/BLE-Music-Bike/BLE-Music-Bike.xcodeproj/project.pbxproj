@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		8B66C6601E99EBEA00786A78 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C65E1E99EBDB00786A78 /* Alamofire.framework */; };
 		8B66C6611E99EBEA00786A78 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C65E1E99EBDB00786A78 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8B66C6791E99F75400786A78 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */; };
-		8B66C67A1E99F75400786A78 /* SpotifyAudioPlayback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8B66C67B1E99F75400786A78 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */; };
-		8B66C67C1E99F75400786A78 /* SpotifyAuthentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8B66C67F1E99F7DF00786A78 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */; };
-		8B66C6801E99F7DF00786A78 /* SpotifyMetadata.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B66C6821E9A06FD00786A78 /* SongDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66C6811E9A06FD00786A78 /* SongDatabase.swift */; };
+		8BAB69D11EA1507A004ABFCB /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAB69CE1EA1507A004ABFCB /* SpotifyAudioPlayback.framework */; };
+		8BAB69D21EA1507A004ABFCB /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAB69CF1EA1507A004ABFCB /* SpotifyAuthentication.framework */; };
+		8BAB69D31EA1507A004ABFCB /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAB69D01EA1507A004ABFCB /* SpotifyMetadata.framework */; };
 		8BF1D8221E9EF482002A62F3 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1D8211E9EF482002A62F3 /* BLE.swift */; };
 		8BF1D8241E9F1088002A62F3 /* SpotifyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1D8231E9F1088002A62F3 /* SpotifyPlayer.swift */; };
 		B650F1321E95E24A00694F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650F1311E95E24A00694F57 /* AppDelegate.swift */; };
@@ -51,10 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8B66C6801E99F7DF00786A78 /* SpotifyMetadata.framework in Embed Frameworks */,
-				8B66C67C1E99F75400786A78 /* SpotifyAuthentication.framework in Embed Frameworks */,
 				8B66C6611E99EBEA00786A78 /* Alamofire.framework in Embed Frameworks */,
-				8B66C67A1E99F75400786A78 /* SpotifyAudioPlayback.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,10 +58,10 @@
 /* Begin PBXFileReference section */
 		8B66C65A1E99D74400786A78 /* BLE-Music-Bike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLE-Music-Bike-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B66C65E1E99EBDB00786A78 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "BLE-Music-Bike/Carthage/Build/iOS/Alamofire.framework"; sourceTree = "<group>"; };
-		8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
-		8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
-		8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "BLE-Music-Bike/ios-sdk/SpotifyMetadata.framework"; sourceTree = "<group>"; };
 		8B66C6811E9A06FD00786A78 /* SongDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDatabase.swift; sourceTree = "<group>"; };
+		8BAB69CE1EA1507A004ABFCB /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "BLE-Music-Bike/ios-frameworks/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
+		8BAB69CF1EA1507A004ABFCB /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "BLE-Music-Bike/ios-frameworks/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
+		8BAB69D01EA1507A004ABFCB /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "BLE-Music-Bike/ios-frameworks/SpotifyMetadata.framework"; sourceTree = "<group>"; };
 		8BF1D8211E9EF482002A62F3 /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
 		8BF1D8231E9F1088002A62F3 /* SpotifyPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPlayer.swift; sourceTree = "<group>"; };
 		B650F12E1E95E24A00694F57 /* BLE-Music-Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-Music-Bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,10 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B66C67F1E99F7DF00786A78 /* SpotifyMetadata.framework in Frameworks */,
-				8B66C67B1E99F75400786A78 /* SpotifyAuthentication.framework in Frameworks */,
+				8BAB69D31EA1507A004ABFCB /* SpotifyMetadata.framework in Frameworks */,
 				8B66C6601E99EBEA00786A78 /* Alamofire.framework in Frameworks */,
-				8B66C6791E99F75400786A78 /* SpotifyAudioPlayback.framework in Frameworks */,
+				8BAB69D21EA1507A004ABFCB /* SpotifyAuthentication.framework in Frameworks */,
+				8BAB69D11EA1507A004ABFCB /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,9 +183,9 @@
 		B650F1731E961A6500694F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8B66C67D1E99F7D300786A78 /* SpotifyMetadata.framework */,
-				8B66C6751E99F73500786A78 /* SpotifyAudioPlayback.framework */,
-				8B66C6761E99F73500786A78 /* SpotifyAuthentication.framework */,
+				8BAB69CE1EA1507A004ABFCB /* SpotifyAudioPlayback.framework */,
+				8BAB69CF1EA1507A004ABFCB /* SpotifyAuthentication.framework */,
+				8BAB69D01EA1507A004ABFCB /* SpotifyMetadata.framework */,
 				8B66C65E1E99EBDB00786A78 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -510,6 +504,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BLE-Music-Bike/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/BLE-Music-Bike/ios-sdk",
+					"$(PROJECT_DIR)/BLE-Music-Bike/ios-frameworks",
 				);
 				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -534,6 +529,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BLE-Music-Bike/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/BLE-Music-Bike/ios-sdk",
+					"$(PROJECT_DIR)/BLE-Music-Bike/ios-frameworks",
 				);
 				INFOPLIST_FILE = "BLE-Music-Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
