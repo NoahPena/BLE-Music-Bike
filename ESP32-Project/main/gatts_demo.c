@@ -38,6 +38,8 @@
 static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 
+
+
 #define GATTS_SERVICE_UUID_TEST_A   0x00FF
 #define GATTS_CHAR_UUID_TEST_A      0xFF01
 #define GATTS_DESCR_UUID_TEST_A     0x3333
@@ -54,6 +56,16 @@ static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 #define GATTS_DEMO_CHAR_VAL_LEN_MAX 0x40
 
 uint8_t char1_str[] = {0x11,0x22,0x33};
+
+static xQueueHandle gpio_evt_queue = 0;
+esp_gatt_if_t gatts_if_for_indicate = ESP_GATT_IF_NONE;
+
+static void IRAM_ATTR gpio_isr_handler(void* arg)
+{
+    uint32_t gpio_num = (uint32_t) arg;
+    xQueueSendFromISR(gpio_evt_queue, &gpio_num, 0);
+}
+
 esp_attr_value_t gatts_demo_char1_val =
 {
     .attr_max_len = GATTS_DEMO_CHAR_VAL_LEN_MAX,
@@ -260,9 +272,17 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                  param->connect.remote_bda[3], param->connect.remote_bda[4], param->connect.remote_bda[5],
                  param->connect.is_connected);
         gl_profile_tab[PROFILE_A_APP_ID].conn_id = param->connect.conn_id;
+
+        gatts_if_for_indicate = gatts_if;
+        printf("set it\n");
+
         break;
     case ESP_GATTS_DISCONNECT_EVT:
         esp_ble_gap_start_advertising(&test_adv_params);
+
+        gatts_if_for_indicate = ESP_GATT_IF_NONE;
+        printf("disconnected\n");
+
         break;
     case ESP_GATTS_OPEN_EVT:
     case ESP_GATTS_CANCEL_OPEN_EVT:
@@ -396,6 +416,74 @@ static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_
     } while (0);
 }
 
+#define GPIO_INPUT_IO_0       0
+#define GPIO_INPUT_IO_1       18
+#define GPIO_INPUT_PIN_SEL    ((1 << GPIO_INPUT_IO_0) | (1 << GPIO_INPUT_IO_1))
+
+#define ESP_INTR_FLAG_DEFAULT  0
+
+
+static void ble_indicate(int value)
+{
+    if (gatts_if_for_indicate == ESP_GATT_IF_NONE)
+    {
+        printf("didn't work\n");
+        return;
+    }
+
+    printf("can't even process\n");
+
+    uint16_t attr_handle = 0x002a;
+    uint8_t value_len = 5;
+    uint8_t value_arr[] = "play";
+    esp_ble_gatts_send_indicate(gatts_if_for_indicate, 0, attr_handle, value_len, value_arr, false);
+}
+
+static void gpio_task(void* arg)
+{
+    uint8_t io_num;
+
+    while(true)
+    {
+        if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY))
+        {
+            int io_level = gpio_get_level(io_num);
+            printf("GPIO[%d] val: %d\n", io_num, io_level);
+
+            ble_indicate(io_level);
+
+        }
+    }
+}
+
+static void init_buttons()
+{
+    gpio_config_t io_conf;
+
+    io_conf.intr_type = GPIO_PIN_INTR_POSEDGE;
+
+    io_conf.pin_bit_mask = GPIO_INPUT_PIN_SEL;
+
+    io_conf.mode = GPIO_MODE_INPUT;
+
+    io_conf.pull_up_en = 1;
+
+    io_conf.pull_down_en = 0;
+
+    gpio_config(&io_conf);
+
+    gpio_set_intr_type(GPIO_INPUT_IO_0, GPIO_INTR_ANYEDGE);
+
+    gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
+
+    xTaskCreate(gpio_task, "gpio_task", 2048, 0, 10, 0);
+
+    gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
+
+    gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
+
+}
+
 void app_main()
 {
     esp_err_t ret;
@@ -406,8 +494,8 @@ void app_main()
 
     if (ret)
     {
-	ESP_LOGE(GATTS_TAG, "%s initialize controller failed\n", __func__);
-	return;
+	       ESP_LOGE(GATTS_TAG, "%s initialize controller failed\n", __func__);
+	       return;
     }
 
     ret = esp_bt_controller_enable(ESP_BT_MODE_BTDM);
@@ -430,6 +518,8 @@ void app_main()
     esp_ble_gap_register_callback(gap_event_handler);
     esp_ble_gatts_app_register(PROFILE_A_APP_ID);
     esp_ble_gatts_app_register(PROFILE_B_APP_ID);
+
+    init_buttons();
 
     return;
 }
